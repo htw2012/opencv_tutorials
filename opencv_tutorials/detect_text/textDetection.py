@@ -72,7 +72,7 @@ def findTextRegion(img):
         width = abs(box[0][0] - box[2][0])
 
         # 筛选那些太细的矩形，留下扁的
-        if(height > width * 1.2): # 长和高的比例
+        if height > width * 1.2: # 长和高的比例
             print("height-width filter-minAreaRect", cv2.minAreaRect(cnt))
             continue
 
